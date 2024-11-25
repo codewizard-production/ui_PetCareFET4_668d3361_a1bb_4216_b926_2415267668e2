@@ -1,0 +1,32 @@
+{
+
+"training": [
+    {
+        "key": "TrainingsId",
+        "type": "keyid",
+        "UIComponentTitle": "Training"
+    }
+        ,{
+        "key": "CompleteBy",
+        "label": "CompleteBy",
+        "type": "date",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Trainingslist",
+        "label": "Trainingslist",
+        "type": "dropdown",
+        "valueId": "Value",
+        "nameId": "Name",
+        "contentId": "Name",
+        "source": "TrainingLevel",
+        "enum": true,
+        "editable": true,
+        "validators": [
+             "isNumber"
+        ]
+                            }
+]
+}

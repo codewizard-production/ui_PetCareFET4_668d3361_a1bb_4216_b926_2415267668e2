@@ -1,0 +1,646 @@
+{
+        "training": [
+                        {
+                            "key": "CompleteBy",
+                            "label": "CompleteBy",
+                            "type": "date",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "CompleteBy is required"
+                            ]
+                        },
+                        {
+                            "key": "TrainingsId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Trainingslist",
+                            "label": "Trainingslist",
+                            "type": "dropdown",
+                                "valueId": "Value",
+                                "nameId": "Name",
+                                "contentId": "Name",
+                                "source": "Model.TrainingLevel",
+                                "editable": true,
+                                "validators": [
+                                    "required",
+                                    "isNumber"
+                                ],
+                                "validationMessages": [
+                                    "Trainingslist is required"
+                                ]
+                            }
+        ]
+,        "performanceappraisal": [
+                        {
+                            "key": "Quarter",
+                            "label": "Quarter",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Quarter is required"
+                            ]
+                        },
+                        {
+                            "key": "Date",
+                            "label": "Date",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Date is required"
+                            ]
+                        },
+                        {
+                            "key": "EmployeeNotes",
+                            "label": "EmployeeNotes",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmployeeNotes is required"
+                            ]
+                        },
+                        {
+                            "key": "ManagerComments",
+                            "label": "ManagerComments",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ManagerComments is required"
+                            ]
+                        },
+                        {
+                            "key": "HikePercentage",
+                            "label": "HikePercentage",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "HikePercentage is required"
+                            ]
+                        },
+                        {
+                            "key": "AppraisalRating",
+                            "label": "AppraisalRating",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "AppraisalRating is required"
+                            ]
+                        },
+                        {
+                            "key": "AppraisalID",
+                            "type": "keyid"
+                        },
+                                                {
+                            "key": "Promotion",
+                            "label": "Promotion",
+                            "type": "check",
+                                "editable": true,
+                                "validators": [
+                                    "required"
+                                ],
+                                "validationMessages": [
+                                    "Promotion is required"
+                                ]
+                            }
+        ]
+,        "organization": [
+                        {
+                            "key": "OrganizationID",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "OrganizationName",
+                            "label": "OrganizationName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "OrganizationName is required"
+                            ]
+                        },
+                        {
+                            "key": "OrganzationMissionVision",
+                            "label": "OrganzationMissionVision",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "OrganzationMissionVision is required"
+                            ]
+                        },
+                        {
+                            "key": "OrganizationValues",
+                            "label": "OrganizationValues",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "OrganizationValues is required"
+                            ]
+                        },
+                        {
+                            "key": "OrgBranch",
+                            "label": "OrgBranch",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.OrgBranch",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "OrgBranch is required"
+                            ]
+                        },
+                    {
+                        "key": "OrganizationEmployees",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "employeepersonalinfo": [
+                        {
+                            "key": "EmpFullName",
+                            "label": "EmpFullName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpFullName is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpGender",
+                            "label": "EmpGender",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpGender is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpDOB",
+                            "label": "EmpDOB",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "EmpDOB is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpPhoneNo",
+                            "label": "EmpPhoneNo",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int64",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "EmpPhoneNo is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpEmailID",
+                            "label": "EmpEmailID",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpEmailID is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpLaguagesKnown",
+                            "label": "EmpLaguagesKnown",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpLaguagesKnown is required"
+                            ]
+                        },
+                        {
+                            "key": "EmployeePersonalID",
+                            "label": "EmployeePersonalID",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int32",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "EmployeePersonalID is required"
+                            ]
+                        },
+                        {
+                            "key": "PrevCompany",
+                            "label": "PrevCompany",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "PrevCompany is required"
+                            ]
+                        },
+                        {
+                            "key": "JobTtile",
+                            "label": "JobTtile",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "JobTtile is required"
+                            ]
+                        },
+                        {
+                            "key": "WorkLocation",
+                            "label": "WorkLocation",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "WorkLocation is required"
+                            ]
+                        },
+                        {
+                            "key": "FromDate",
+                            "label": "FromDate",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "FromDate is required"
+                            ]
+                        },
+                        {
+                            "key": "ToDate",
+                            "label": "ToDate",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "ToDate is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpType",
+                            "label": "EmpType",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpType is required"
+                            ]
+                        },
+                        {
+                            "key": "RecentGrad",
+                            "label": "RecentGrad",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "RecentGrad is required"
+                            ]
+                        },
+                                                {
+                            "key": "CertificationsVerified",
+                            "label": "CertificationsVerified",
+                            "type": "check",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "CertificationsVerified is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpBloodgroup",
+                            "label": "EmpBloodgroup",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpBloodgroup is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpEmergencycontact",
+                            "label": "EmpEmergencycontact",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int64",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "EmpEmergencycontact is required"
+                            ]
+                        },
+                        {
+                            "key": "Relation",
+                            "label": "Relation",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Relation is required"
+                            ]
+                        },
+                        {
+                            "key": "PocName",
+                            "label": "PocName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "PocName is required"
+                            ]
+                        },
+                        {
+                            "key": "Id",
+                            "type": "keyid"
+                        } 
+        ]
+,        "emlpoyeeprofile": [
+                        {
+                            "key": "EmpID",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "EmpName",
+                            "label": "EmpName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpName is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpEmailID",
+                            "label": "EmpEmailID",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpEmailID is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpPhoto",
+                            "label": "EmpPhoto",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "EmpPhoto is required"
+                            ]
+                        },
+                        {
+                            "key": "JobTitle",
+                            "label": "JobTitle",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "JobTitle is required"
+                            ]
+                        },
+                        {
+                            "key": "DomainVertical",
+                            "label": "DomainVertical",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.OrgDept",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "DomainVertical is required"
+                            ]
+                        },
+                        {
+                            "key": "ReportingManager",
+                            "label": "ReportingManager",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ReportingManager is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpType",
+                            "label": "EmpType",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.EmploymentType",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "EmpType is required"
+                            ]
+                        },
+                        {
+                            "key": "WorkLocation",
+                            "label": "WorkLocation",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.OrgBranch",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "WorkLocation is required"
+                            ]
+                        },
+                        {
+                            "key": "PackageOffered",
+                            "label": "PackageOffered",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int32",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "PackageOffered is required"
+                            ]
+                        },
+                        {
+                            "key": "EmpContactNum",
+                            "label": "EmpContactNum",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int64",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "EmpContactNum is required"
+                            ]
+                        },
+                        {
+                            "key": "Level",
+                            "label": "Level",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Level is required"
+                            ]
+                        },
+                        {
+                            "key": "Domain",
+                            "label": "Domain",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Domain is required"
+                            ]
+                        },
+                    {
+                        "key": "EmlpoyeeProfileEmpInfo",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "EmlpoyeeProfileAppraisal",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "EmlpoyeeProfileOrgProvidedTrainings",
+                        "type": "keyid"
+                    }  
+                        ]
+}
